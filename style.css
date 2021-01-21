@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ee9ca7;
+    background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    height: 100vh;
+    font-family: 'Syne', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    padding: 5rem;
+    margin-bottom: 3rem ;
+}
+
+.music__container {
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 18px 10px 7px #000000;
+    box-shadow: 2px 18px 10px 7px #cc7474;
+    display: flex;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 9999;
+}
+
+.img__container {
+    position: relative;
+    width: 110px;
+}
+
+.img__container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 4s linear infinite;
+    animation-play-state: paused;
+}
+
+.music__container.play .img__container img {
+    animation-play-state: running;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action__btn {
+    background-color: #fff;
+    cursor: pointer;
+    border: 0;
+    color: #dfdbdf;
+}
+
+.action__btn i {
+    padding: 0 1.4rem;
+}
+
+.fas.fa-play {
+    color: #cdc2d0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
