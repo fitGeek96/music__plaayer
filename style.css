@@ -26,6 +26,8 @@ h1 {
 h4 {
     padding-bottom: .5rem;
     padding-right: .7rem;
+    text-align: left;
+    font-size: .9rem;
 }
 
 .music__container {
@@ -102,7 +104,7 @@ h4 {
     top: 0;
     left: 20px;
     width: calc(100% - 40px);
-    height: 50%;
+    height: 70%;
     padding-left: 10rem;
     padding-top: .5rem;
     transform: translateY(0%);
